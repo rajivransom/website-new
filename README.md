@@ -1,3 +1,3 @@
-# ADC-porfolio-example-site
+# Hack Club SSGI
 
-[https://alexadevcommunitycu.netlify.app/](https://alexadevcommunitycu.netlify.app/)
+[https://hackclubssgi.netlify.app](https://hackclubssgi.netlify.app/)
