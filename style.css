@@ -15,6 +15,24 @@ body {
 body * {
   transition: 0.3s;
 }
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
 h1,
 h2,
 h3,
@@ -31,7 +49,7 @@ li,
 span,
 label,
 input,
-textarea {
+textarea, a {
   color: var(--mainText);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, monospace;
 }
@@ -55,17 +73,22 @@ p {
   );
   border-bottom: var(--borderColor);
   overflow: auto;
+  color: var(--mainText);
 }
 .s2 {
   background-color: var(--secondaryColor);
   border-bottom: var(--borderColor);
   overflow: auto;
+  color: var(--secondaryText);
 }
 .main-container {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
+}
+.s2 h2 {
+  color: var(--secondaryText);
 }
 /* ------------------------------ HEADER -------------------------------- */
 .main-head{
@@ -80,9 +103,6 @@ p {
 }
 .social-links .link-icon {
   margin: 1rem;
-  color: var(--secondaryText);
-}
-.s2 h2 {
   color: var(--secondaryText);
 }
 /* ------------------------------ ABOUT SECTION -------------------------------- */
@@ -135,7 +155,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 15rem;
+  max-width: 18rem;
   background-color: var(--mainColor);
   color: var(--mainText);
   border-radius: 10px;
@@ -143,13 +163,17 @@ p {
 }
 .card .card-content {
   margin: 0.5rem;
+  margin-bottom: 1rem;
 }
 .card .card-img {
   width: inherit;
   height: 10rem;
-  object-fit: cover;
+  object-fit: fit;
+  border: 1px solid var(--borderColor);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background-color: #fff;
+
 }
 .card .card-head {
   padding: 0;
@@ -202,6 +226,48 @@ p {
   font-size: 1rem;
   color: var(--secondaryText);
   background-color: var(--secondaryColor);
+}
+
+/*---------------------------------- EVENT PAGE ------------------------------------- */
+.go-home{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, monospace;
+}
+
+.event-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.event-description  {
+  width: 50%;
+}
+.event-description > p{
+  color: var(--secondaryText);
+}
+
+.date-desc{
+  font-size: 1.5rem;
+}
+
+.event-img{
+  width: 40%;
+  height: auto;
+}
+.register-container{
+  margin-top: 3rem;
+}
+
+.register-button{
+  color: var(--secondaryText);
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #5bc0de;
 }
 
 /* ------------------------------- MEDIA QUERIES --------------------------------- */
